@@ -1,0 +1,47 @@
+.ueEdit{
+  height: 100%;
+  margin-top: 5px;
+  position: relative;
+  .ue-mask{
+    width: calc(100% - 110px);
+    height: 42px;
+    position: absolute;
+    left: 55px;
+    top: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: rgba(0,0,0,0.1);
+  }
+
+  .quill-editor{
+    height: 100%;
+  }
+
+  .ql-container{
+    height: calc(100% - 42px);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #fff;
+    
+  }
+
+  .ql-icon{
+    width: 28px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 18px;
+    margin-left: 10px;
+    color:#444;
+  }
+
+  .toolbar-vue{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #fff;
+
+  }
+
+  .ql-snow .ql-editor img{
+    width: 100%;
+  }
+}
