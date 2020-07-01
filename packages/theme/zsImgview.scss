@@ -1,0 +1,190 @@
+.zs-img-view{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	flex-wrap: wrap;
+	left: 0;
+	top:0;
+	background: rgba(0,0,0,0.9);
+	z-index: 999;
+}
+
+.zs-img-view .img-close{
+	width: 30px;
+	height: 30px;
+	text-align: right;
+	color: #fff;
+	position: fixed;
+	right: 10px;
+	top:10px;
+	cursor: pointer;
+	z-index: 9999
+}
+.zs-img-view .img-close .icon-quxiao{
+	font-size: 30px;
+}
+.zs-img-view .img-body{
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.zs-img-view .ib-img-group{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.zs-img-view .ib-imgs:hover{
+	cursor: grab;
+}
+.zs-img-view .ib-imgs:active{
+	cursor: grabbing;
+}
+.zs-img-view  .ib-imgs{
+	transition: transform 0.3s ease 0s;
+}
+.zs-img-view .ib-opt{
+	position: absolute;
+	top:calc(50% - 25px);
+	width: 50px;
+	height: 50px;
+	background: #464646;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 25px;
+	border-radius: 50%;
+	z-index: 999;
+	cursor: pointer;
+}
+.zs-img-view .ib-opt.ib-next{
+	right: 10px;
+}
+.zs-img-view .ib-opt.ib-pres{
+	left: 10px;
+}
+
+.zs-img-view .ib-mark{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	bottom:50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+}
+
+.zs-img-view .ib-mark .ib-mark-items{
+	background: #464646;
+	border-radius: 50%;
+	margin:0 7px;
+	cursor: pointer;
+}
+.zs-img-view .ib-mark .ib-mark-items.active{
+	background: #fff;
+}
+
+.zs-img-view .img-tools{
+	width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zs-img-view .img-tools .it-body{
+	width: 200px;
+	height: 35px;
+	background: #464646;
+	border-radius: 20px;
+	display: flex;
+}
+.zs-img-view .img-tools .it-body .it-items{
+	width: 60px;
+	height: 35px;
+	color:#fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	box-sizing: border-box;
+	cursor: pointer;
+	border-right:2px solid #404040;
+}
+
+/* 弹框模式css */
+.zs-img-view.is-dialog{
+	background: none;
+	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: auto;
+}
+.img-dia-body{
+	background: #fff;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 10px #c8c8c8;
+	border-radius: 8px;
+	flex-shrink: 0;
+}
+.dia-header{
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding:0px 20px;
+	cursor: all-scroll;
+	background: #eee;
+}
+.dia-header .dia-close{
+	font-size: 22px;
+	cursor:pointer;
+}
+
+.img-dia-body .dia-img{
+	overflow: hidden;
+	position: relative;
+	background: rgba(0,0,0,0.8);
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zs-img-view .img-dia-body .ib-opt{
+	top: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+	font-size: 22px;
+}
+
+.img-dia-body .ib-mark{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	top:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+}
+.img-dia-body  .img-tools{
+	position: absolute;
+	left: 0;
+	bottom:0;
+}

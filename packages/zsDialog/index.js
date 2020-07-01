@@ -1,9 +1,7 @@
-import zsDialogComponents from './zsDialog.vue'
+import zsDialog from './zsDialog.vue'
 
-const zsDialog = {
-    install:function(Vue){
-        Vue.component('zsDialog',zsDialogComponents)
-    }
-};
+zsDialog.install = function(Vue){
+    Vue.component(zsDialog.name,zsDialog)
+}
 
 export default zsDialog;

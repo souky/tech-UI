@@ -1,3 +1,14 @@
 @import "./font/iconfont.css";
 
+$mian-color:#007db7;
+$disable-color:#969696;
+
+.flex-h-center{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 @import "./zsButton.scss";
+@import "./zsDialog.scss";
+@import "./zsImgview.scss";

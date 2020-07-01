@@ -1,7 +1,7 @@
 <template>
-  <button v-if='shows' :class='{'zs-btn': true,'disabled': disabled}' :disabled='disabled' @click='clicks'>
+  <button v-if='shows' :class="{'zs-btn': true,'disabled': disabled}" :disabled='disabled' @click='clicks'>
     <div class='zs-btn-icon-div'>
-      <i :class='className' ></i>
+      <i :class="[className,'btn-icon']" ></i>
     </div>
     <div class='zs-btn-text'><slot></slot></div>
   </button>

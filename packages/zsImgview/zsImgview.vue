@@ -4,7 +4,7 @@
     :style="{'margin-left':diaLogLeft,'margin-top':diaLogTop}">
 
       <div class="img-close" @click="close" v-if="!isDialog">
-        <i class="zs-icon icon-quxiao"></i>
+        <i class="zs-icon-quxiao"></i>
       </div>
 
       <div class="img-body" v-if="!isDialog">
@@ -26,15 +26,15 @@
         :style="{'width':diaWidth+'px','height':diaHeight+'px','margin-left':'0px','margin-top':'0px'}">
         <div class="dia-header" @mousedown="dialogMousedown" @mouseup="dialogMouseup">
           {{diaTitle}}
-          <i class="zs-icon icon-quxiao dia-close" @click="close"></i>
+          <i class="zs-icon-quxiao dia-close" @click="close"></i>
         </div>
         <div class="dia-img" :style="{'width':'100%','height':'calc('+diaHeight+'px - 40px)'}">
           <img class="ib-imgs" :src="e" v-for="e,index in imgList" :key="index+1"
           v-if="index == imgIndex" @mousedown="imgMousedown" @mouseup="imgMouseup"
           :style="{'width':'100%','transform':'scale('+zoom+') rotate('+rotate+'deg)','margin-left':'0px','margin-top':'0px'}"/>
 
-          <div class="ib-opt ib-pres" @click="changeImg('pres')"><i class="el-icon-arrow-left"></i></div>
-          <div class="ib-opt ib-next" @click="changeImg('next')"><i class="el-icon-arrow-right"></i></div>
+          <div class="ib-opt ib-pres" @click="changeImg('pres')"><i class="zs-icon-arrow-left"></i></div>
+          <div class="ib-opt ib-next" @click="changeImg('next')"><i class="zs-icon-arrow-right"></i></div>
 
           <div class="ib-mark" v-if="showMark">
             <div v-for="e,index in imgList" :style="{'width':markSize+'px','height':markSize+'px'}"
@@ -85,6 +85,7 @@
 
 <script>
 export default {
+  name: 'zsImgview',
   props: {
     visible:{
       type:Boolean,

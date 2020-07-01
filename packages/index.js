@@ -1,9 +1,13 @@
 import './theme/index.scss'
 
 import zsButton from './zsButton'
+import zsDialog from './zsDialog'
+import zsImgview from './zsImgview'
 
 const components = [
-  zsButton
+  zsButton,
+  zsDialog,
+  zsImgview
 ]
 
 const install = function(Vue) {
@@ -14,5 +18,7 @@ const install = function(Vue) {
 
 export default {
   install,
-  zsButton
+  zsButton,
+  zsDialog,
+  zsImgview
 }

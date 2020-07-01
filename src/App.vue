@@ -1,13 +1,20 @@
 <template>
   <div id="app">
     <zs-button type='save'>测试按钮</zs-button>
+
+    <zsImgview :visible.sync="visible"></zsImgview>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'App'
+  name: 'App',
+  data(){
+    return {
+      visible:true
+    }
+  }
 }
 </script>
 

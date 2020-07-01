@@ -4,19 +4,19 @@
       <div class="zs-dialog-title">
         {{title}}
         <div class="zs-dialog-close" @click="close">
-          <i class="zs-icon icon-quxiao"></i>
+          <i class="zs-icon-quxiao"></i>
         </div>
       </div>
       <div class="zs-dialog-body" >
         <slot></slot>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
+  name:'zsDialog',
   props: {
     visible:{
       type:Boolean,
